@@ -116,21 +116,12 @@
     <img src="https://source.unsplash.com/600x400/?art" alt="Foto 6">
   </section>
 
+  
     <!-- Lightbox -->
   <div id="lightbox" class="lightbox" onclick="cerrarLightbox()">
     <span class="close">&times;</span>
     <img id="lightbox-img" src="">
   </div>
-
-  <script>
-  function abrirLightbox(src) {
-    document.getElementById('lightbox').style.display = 'flex';
-     document.getElementById('lightbox-img').src = src;
-}
-function cerrarLightbox() {
-  document.getElementById('lightbox').style.display = 'none';
-}
-<script>
   
   <!-- Pie de página -->
   <footer>
@@ -142,8 +133,20 @@ function cerrarLightbox() {
       <a href="https://wa.me/5215555555555" target="_blank">💬 WhatsApp</a>
     </p>
   </footer>
+
+  <!-- SCRIPT DEL LIGTBOX -->
+  <script>
+  function abrirLightbox(src) {
+    document.getElementById('lightbox').style.display = 'flex';
+     document.getElementById('lightbox-img').src = src;
+}
+function cerrarLightbox() {
+  document.getElementById('lightbox').style.display = 'none';
+}
+<script>
 </body>
 </html>
+
 
 
 
