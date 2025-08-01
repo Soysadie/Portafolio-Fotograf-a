@@ -108,14 +108,15 @@
 
   <!-- Galería de fotos -->
   <section class="galeria">
-    <img src="imagenes/imag1.jpeg" alt="Foto 1">
-    <img src="imagenes/imag2.jpeg" alt="Foto 2">
-    <img src="imagenes/imag3.jpg" alt="Foto 3">
+    <img src="imagenes/imag1.jpeg" alt="Foto 1" onclick="abrirLightbox(this.src)">
+    <img src="imagenes/imag2.jpeg" alt="Foto 2" onclick="abrirLightbox(this.src)">
+    <img src="imagenes/imag3.jpg" alt="Foto 3" onclick="abrirLightbox(this.src)">
     <img src="https://source.unsplash.com/600x400/?travel" alt="Foto 4">
     <img src="https://source.unsplash.com/600x400/?wedding" alt="Foto 5">
     <img src="https://source.unsplash.com/600x400/?art" alt="Foto 6">
   </section>
 
+  
   <!-- Pie de página -->
   <footer>
     <p>© 2025 Soy Sadie Photography</p>
@@ -126,8 +127,25 @@
       <a href="https://wa.me/5215555555555" target="_blank">💬 WhatsApp</a>
     </p>
   </footer>
+
+    <!-- Lightbox -->
+  <div id="lightbox" class="lightbox" onclick="cerrarLightbox()">
+    <span class="close">&times;</span>
+    <img id="lightbox-img" src="">
+  </div>
+
+  <script>
+  fuction abrirLightbox(src) {
+    document.getElementById('lightbox').style.display = 'flex';
+     document.getElementById('lightbox-img').src = src;
+}
+function cerrarLightbox() {
+  document.getElementById('lightbox').style.display = 'none';
+}
+<script>
 </body>
 </html>
+
 
 
 
